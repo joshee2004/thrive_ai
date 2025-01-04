@@ -1,0 +1,12 @@
+{% extends 'assistant/base.html' %}
+{% block title %}Welcome to ThriveAI{% endblock %}
+{% block content %}
+<div class="text-center">
+    <h1 class="text-4xl font-bold text-green-600">Your AI Mental Health Companion</h1>
+    <p class="mt-4 text-lg text-gray-600">24/7 support, personalized insights, and more.</p>
+    <div class="mt-6">
+        <a href="{% url 'register' %}" class="mt-6 px-4 py-2 bg-green-600 text-white rounded">Get Started</a>
+        <a href="{% url 'login' %}" class="mt-2 px-4 py-2 bg-gray-200 text-gray-800 rounded">Login</a>
+    </div>
+</div>
+{% endblock %}
